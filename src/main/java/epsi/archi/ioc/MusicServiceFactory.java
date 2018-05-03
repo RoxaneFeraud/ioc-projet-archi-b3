@@ -1,6 +1,5 @@
 package epsi.archi.ioc;
 
-
 import java.time.LocalDate;
 import java.util.Arrays;
 import java.util.List;
@@ -10,7 +9,7 @@ public class MusicServiceFactory {
     MusicStorage storage;
 
     public MusicServiceFactory() {
-        inJsonStorage();
+
     }
 
     public void inJsonStorage() {
@@ -29,10 +28,29 @@ public class MusicServiceFactory {
 
     public void jsonStorage() {
         new MusicJsonStorage("musiques.json");
+        System.out.println("Les données proviennent d'un fichier Json.");
     }
 
     public MusicService create() {
         return new MusicService(storage);
     }
 
+    public void inXmlStorage() {
+        Music music = new Music();
+        music.setTitle("Hello");
+        music.setCategory("Pop");
+        music.setDuration(3);
+        music.setExploitationNumber("1111111111");
+        music.setSinger("Adele");
+        music.setReleaseDate(LocalDate.of(2017, 12, 03));
+
+        List<Music> musics = Arrays.asList(music);
+
+        storage = new MusicStorageInMemory(musics);
+    }
+
+    public void xmlStorage() {
+        new MusicJsonStorage("musiques.xml");
+        System.out.println("Les données proviennent d'un fichier XML.");
+    }
 }

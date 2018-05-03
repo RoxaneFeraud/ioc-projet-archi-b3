@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="windows-1252"?>
+<!--
+To change this license header, choose License Headers in Project Properties.
+To change this template file, choose Tools | Templates
+and open the template in the editor.
+-->
+
+<musique>
+    <title>Hello</title>
+    <category>Pop</category>
+    <duration>3</duration>
+    <exploitationNumber>1111111111</exploitationNumber>
+    <singer>Adele</singer>
+    <releaseDate>2017-12-03</releaseDate>
+</musique>
+
