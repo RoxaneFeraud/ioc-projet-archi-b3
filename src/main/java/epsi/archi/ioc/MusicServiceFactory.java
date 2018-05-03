@@ -10,10 +10,10 @@ public class MusicServiceFactory {
     MusicStorage storage;
 
     public MusicServiceFactory() {
-        inMemoryStorage();
+        inJsonStorage();
     }
 
-    public void inMemoryStorage() {
+    public void inJsonStorage() {
         Music music = new Music();
         music.setTitle("Billie Jean");
         music.setCategory("Pop");
