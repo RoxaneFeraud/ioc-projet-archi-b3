@@ -10,7 +10,7 @@ public class Application {
 
         MusicService service = factory.create();
 
-        service.searchBySingerAndAfter("Michael Jackson", LocalDate.of(1995, 01, 01))
+        service.searchBySingerAndAfter("Michael Jackson", LocalDate.of(1983, 01, 02))
                 .forEach(m -> System.out.println(m));
 
     }

@@ -15,12 +15,12 @@ public class MusicServiceFactory {
 
     public void inMemoryStorage() {
         Music music = new Music();
-        music.setTitle("Bad");
+        music.setTitle("Billie Jean");
         music.setCategory("Pop");
         music.setDuration(3);
         music.setExploitationNumber("1234567890");
         music.setSinger("Michael Jackson");
-        music.setReleaseDate(LocalDate.of(1997, 10, 01));
+        music.setReleaseDate(LocalDate.of(1983, 01, 02));
 
         List<Music> musics = Arrays.asList(music);
 
